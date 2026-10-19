@@ -5,6 +5,7 @@
   "navbar.menu.profile": "Profile",
   "dashboard.title": "Dashboard",
   "menu.dashboard.title": "Dashboard",
+  "menu.budget.goal": "Budget & Goal",
   "menu.transaction.title": "Add Transaction",
   "dashboard.card.total.balance": "Total Balance",
   "dashbord.card.monthly.income": "Monthly Income",
@@ -14,5 +15,9 @@
   "dashboard.card.budget.overview": "Budget Overview",
   "dashboard.card.reminder.alerts": "Reminder & Alerts",
   "transaction.filter.by": "Filter by: All Categories",
-  "transaction.sort.by": "Sort by: Newest First"
+  "transaction.sort.by": "Sort by: Newest First",
+  "budget.goal.monthly.budget": "Budget & Goal",
+  "budget.goal.savings.goal": "Savings Goal",
+  "budget.goal.monthly.overview": "Monthly overview",
+  "budget.goal.budget.health": "Budget Health"
 }

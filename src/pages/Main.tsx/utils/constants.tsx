@@ -6,6 +6,7 @@ import {
   UserOutlined,
   GlobalOutlined,
   TranslationOutlined,
+  WalletOutlined 
 } from "@ant-design/icons";
 
 type NavBarItem = Required<MenuProps>["items"][number];
@@ -25,6 +26,12 @@ export const useMenuItems = (): MenuItem[] => {
       icon: <PlusCircleOutlined />,
       label: t("menu.transaction.title"),
       path: "/transaction",
+    },
+    {
+      key: "3",
+      icon: <WalletOutlined />,
+      label: t("menu.budget.goal"),
+      path: "/budget-goal"
     },
   ];
 };

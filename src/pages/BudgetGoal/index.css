@@ -1,0 +1,7 @@
+.savings-card-box {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 24px;
+  padding-right: 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

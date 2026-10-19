@@ -1,9 +1,7 @@
 import type React from "react";
-import { Row } from "antd";
-import type { MenuProps } from "antd";
 import FilterSearch from "./components/FilterSearch";
-import { Button, Space, Table } from "antd";
-import type { TableProps } from "antd";
+import { Button, Space, Table, Row } from "antd";
+import type { TableProps, MenuProps } from "antd";
 import type { Transaction } from "@interfaces/Dashboard";
 import { PlusOutlined } from "@ant-design/icons";
 
@@ -129,22 +127,26 @@ const App: React.FC = () => {
   ];
 
   return (
-    <Row gutter={[16, 16]}>
-      <Row className="w-100" justify="space-between" align="middle">
-        <FilterSearch items={items} />
-        <Button color="cyan" variant="outlined" icon={<PlusOutlined />}>
-          Add Transaction
-        </Button>
-      </Row>
+    <div>
+      <Space orientation="vertical" size="medium" className="container">
+        <Row gutter={[16, 16]}>
+          <Row className="w-100" justify="space-between" align="middle">
+            <FilterSearch items={items} />
+            <Button color="cyan" variant="outlined" icon={<PlusOutlined />}>
+              Add Transaction
+            </Button>
+          </Row>
 
-      <Row className="w-100">
-        <Table<Transaction>
-          className="w-100"
-          dataSource={transactions}
-          columns={transColumns}
-        />
-      </Row>
-    </Row>
+          <Row className="w-100">
+            <Table<Transaction>
+              className="w-100"
+              dataSource={transactions}
+              columns={transColumns}
+            />
+          </Row>
+        </Row>
+      </Space>
+    </div>
   );
 };
 
