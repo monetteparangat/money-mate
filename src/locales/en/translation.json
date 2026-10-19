@@ -12,5 +12,7 @@
   "dashboard.card.savings.goal": "Savings Goal: Trip to Japan - 40% of $5,000",
   "dashboard.card.recent.transaction": "Recent Transactions",
   "dashboard.card.budget.overview": "Budget Overview",
-  "dashboard.card.reminder.alerts": "Reminder & Alerts"
+  "dashboard.card.reminder.alerts": "Reminder & Alerts",
+  "transaction.filter.by": "Filter by: All Categories",
+  "transaction.sort.by": "Sort by: Newest First"
 }

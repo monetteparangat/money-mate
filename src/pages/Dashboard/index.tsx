@@ -1,14 +1,5 @@
 import { useTranslation } from "react-i18next";
-import {
-  Col,
-  Row,
-  Card,
-  Space,
-  Progress,
-  Listy,
-  Flex,
-  Typography,
-} from "antd";
+import { Col, Row, Card, Space, Progress, Listy, Flex, Typography } from "antd";
 import "./index.css";
 import {
   ShoppingCartOutlined,
@@ -16,17 +7,17 @@ import {
   CoffeeOutlined,
   HomeOutlined,
   CalendarOutlined,
-  ExclamationCircleOutlined 
+  ExclamationCircleOutlined,
 } from "@ant-design/icons";
+import type {
+  Budget,
+  RemindersAlert,
+  Item,
+  Transaction,
+} from "@interfaces/Dashboard";
 
 const Page: React.FC = () => {
   const { t } = useTranslation();
-  type Transaction = {
-    title: string;
-    amount: string;
-    date: string;
-    icon?: React.ReactElement;
-  };
 
   const transactions: Transaction[] = [
     {
@@ -78,22 +69,6 @@ const Page: React.FC = () => {
       icon: <ExclamationCircleOutlined />,
     },
   ];
-
-  type Budget = {
-    title: string;
-    total: string;
-    balance: string;
-  };
-
-  type RemindersAlert = {
-    title: string;
-    icon: React.ReactElement;
-  };
-
-  interface Item<T> {
-    id: number;
-    content: T;
-  }
 
   const transactionItems: Item<Transaction>[] = transactions.map(
     (content, id) => ({ id, content }),

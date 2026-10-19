@@ -24,7 +24,7 @@ export const useMenuItems = (): MenuItem[] => {
       key: "2",
       icon: <PlusCircleOutlined />,
       label: t("menu.transaction.title"),
-      path: "/add-transaction",
+      path: "/transaction",
     },
   ];
 };
