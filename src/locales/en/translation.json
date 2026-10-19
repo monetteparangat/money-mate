@@ -1,9 +1,16 @@
 {
-    "navbar.menu.language": "Language",
-    "navbar.menu.language.english": "English",
-    "navbar.menu.language.filipino": "Filipino",
-    "navbar.menu.profile": "Profile",
-    "dashboard.title": "Dashboard",
-    "menu.dashboard.title": "Dashboard",
-    "menu.transaction.title": "Add Transaction"
+  "navbar.menu.language": "Language",
+  "navbar.menu.language.english": "English",
+  "navbar.menu.language.filipino": "Filipino",
+  "navbar.menu.profile": "Profile",
+  "dashboard.title": "Dashboard",
+  "menu.dashboard.title": "Dashboard",
+  "menu.transaction.title": "Add Transaction",
+  "dashboard.card.total.balance": "Total Balance",
+  "dashbord.card.monthly.income": "Monthly Income",
+  "dashbord.card.monthly.expense": "Monthly Expense",
+  "dashboard.card.savings.goal": "Savings Goal: Trip to Japan - 40% of $5,000",
+  "dashboard.card.recent.transaction": "Recent Transactions",
+  "dashboard.card.budget.overview": "Budget Overview",
+  "dashboard.card.reminder.alerts": "Reminder & Alerts"
 }
