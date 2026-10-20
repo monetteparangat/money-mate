@@ -3,7 +3,11 @@ import FilterSearch from "./components/FilterSearch";
 import { Button, Space, Table, Row } from "antd";
 import type { TableProps, MenuProps } from "antd";
 import type { Transaction } from "@interfaces/Dashboard";
-import { PlusOutlined } from "@ant-design/icons";
+import {
+  DeleteOutlined,
+  EditOutlined,
+  PlusOutlined,
+} from "@ant-design/icons";
 
 const App: React.FC = () => {
   const items: MenuProps["items"] = [
@@ -117,10 +121,28 @@ const App: React.FC = () => {
     {
       title: "Action",
       key: "action",
-      render: (_, record) => (
-        <Space size="medium">
-          <a>Edit </a>
-          <a>Delete </a>
+      dataIndex: "title",
+      render: (title: string) => (
+        <Space size="small">
+          <Button
+            type="link"
+            size="small"
+            icon={<EditOutlined />}
+            aria-label={`Edit ${title}`}
+            title={`Edit ${title}`}
+          >
+            Edit
+          </Button>
+          <Button
+            type="link"
+            size="small"
+            danger
+            icon={<DeleteOutlined />}
+            aria-label={`Delete ${title}`}
+            title={`Delete ${title}`}
+          >
+            Delete
+          </Button>
         </Space>
       ),
     },
@@ -142,6 +164,7 @@ const App: React.FC = () => {
               className="w-100"
               dataSource={transactions}
               columns={transColumns}
+              rowKey="title"
             />
           </Row>
         </Row>

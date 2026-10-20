@@ -1,5 +1,6 @@
-html, body {
-  background-color: #F5F5E9;
+html,
+body {
+  background-color: #f5f5e9;
   margin: 0;
   height: 100%;
 }
@@ -10,4 +11,20 @@ html, body {
 
 .p-20 {
   padding: 100px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.color-green {
+  color: green;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-blue {
+  color: blue;
 }
